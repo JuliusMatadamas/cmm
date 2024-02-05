@@ -10,11 +10,11 @@ export const routes: Routes = [
         loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule)
     },
     {
-        path: '',
+        path: 'register',
         loadChildren: () => import('./pages/register/register.module').then(m => m.RegisterModule)
     },
     {
-        path: 'restore',
+        path: '',
         loadChildren: () => import('./pages/restore/restore.module').then(m => m.RestoreModule)
     },
     {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeftLong, faUser } from "@fortawesome/free-solid-svg-icons";
 import { NgOptimizedImage } from "@angular/common";
 
 @Component({
@@ -14,6 +14,7 @@ import { NgOptimizedImage } from "@angular/common";
     styleUrl: './register.component.css'
 })
 export class RegisterComponent {
-    faUser = faUser;
+    protected readonly faUser = faUser;
+    protected readonly faArrowLeftLong = faArrowLeftLong;
     logoPath: string = 'assets/images/logo-cmm.png';
 }
