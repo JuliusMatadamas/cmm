@@ -14,8 +14,12 @@ export const routes: Routes = [
         loadChildren: () => import('./pages/register/register.module').then(m => m.RegisterModule)
     },
     {
-        path: '',
+        path: 'restore',
         loadChildren: () => import('./pages/restore/restore.module').then(m => m.RestoreModule)
+    },
+    {
+        path: '',
+        loadChildren: () => import('./pages/define/define.module').then(m => m.DefineModule)
     },
     {
         path: '**',
