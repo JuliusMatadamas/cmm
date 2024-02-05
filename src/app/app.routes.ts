@@ -6,12 +6,16 @@ export const routes: Routes = [
         loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
     },
     {
-        path: '',
+        path: 'login',
         loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule)
     },
     {
-        path: 'register',
+        path: '',
         loadChildren: () => import('./pages/register/register.module').then(m => m.RegisterModule)
+    },
+    {
+        path: 'restore',
+        loadChildren: () => import('./pages/restore/restore.module').then(m => m.RestoreModule)
     },
     {
         path: '**',

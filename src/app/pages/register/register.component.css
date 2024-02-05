@@ -1,0 +1,4 @@
+form button:disabled {
+    background: rgba(15, 118, 110, 0.5);
+    cursor: not-allowed;
+}
