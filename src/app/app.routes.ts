@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {
-        path: 'home',
+        path: '',
         loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
     },
     {
@@ -18,7 +18,7 @@ export const routes: Routes = [
         loadChildren: () => import('./pages/restore/restore.module').then(m => m.RestoreModule)
     },
     {
-        path: '',
+        path: 'define',
         loadChildren: () => import('./pages/define/define.module').then(m => m.DefineModule)
     },
     {

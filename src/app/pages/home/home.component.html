@@ -1,1 +1,32 @@
+<div class="flex">
+    <div class="bg-teal-600 duration-300 h-screen p-5 pt-8 relative" [ngClass]="{ 'w-64':open, 'w-20':!open }">
+        <div class="absolute border border-teal-950 bg-white cursor-pointer px-3 py-2 rounded-full top-16 -right-4" (click)="toggleNavbar()" [ngClass]="{'rotate-180':!open}">
+            <fa-icon [icon]="faArrowLeft"></fa-icon>
+        </div>
 
+        <a href="#" class="flex h-32 items-center justify-center mb-5 p-5 relative">
+            <img [src]="logoPathW" alt="Centro Médico Matamoros" class="w-20">
+        </a>
+
+        <hr class="border-b-gray-200">
+
+        <ul class="pt-2">
+            <li *ngFor="let menu of Menus" class="cursor-pointer duration-300 flex gap-x-4 hover:bg-teal-800 items-center mt-2 p-2 rounded-md text-sm text-white">
+                <span class="block float-left text-center text-2xl w-[40px]">
+                    <fa-icon [icon]="menu.icon"></fa-icon>
+                </span>
+
+                <span class="flex-1 font-medium text-base" [ngClass]="{'hidden':!open}">
+                    {{ menu.title }}
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bg-slate-200 h-screen overflow-auto p-7 top-0 w-full">
+        <h1 class="font-semibold text-2xl">Home page</h1>
+
+        <div class="bg-white border h-custom p-14 mt-5 rounded-lg">
+        </div>
+    </div>
+</div>
